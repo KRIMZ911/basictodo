@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class TodoappComponent {
   press = false;
-  taskName = document.getElementById('tname') as HTMLInputElement;
+  
   taskDisciption = document.getElementById('tdiscription') as HTMLInputElement;
   onEnter(){
-    let tasktitle = this.taskName.value;
-    console.log(tasktitle);
+    let tasktitle = document.getElementById('tname') as HTMLInputElement;;
+    console.log(tasktitle.value);
   }
 }
